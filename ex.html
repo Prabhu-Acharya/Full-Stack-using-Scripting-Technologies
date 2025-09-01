@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephant Animation</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow: hidden; /* prevents scrollbar */
+        }
+
+        .elephant {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: moveElephant 10s linear infinite;
+        }
+
+        @keyframes moveElephant {
+            0%   { left: -200px; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <img src="elephant.gif" alt="Elephant" class="elephant">
+</body>
+</html>

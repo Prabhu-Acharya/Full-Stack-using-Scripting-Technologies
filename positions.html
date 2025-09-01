@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{
+            border: 2px solid black;
+            background-color: aqua;
+            padding: 20px;
+            position: relative;
+
+        }
+        .relative{
+            top: 20px;
+            left: 20px;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: rgb(50, 165, 42);
+            height: 2000px;
+            padding: 20px;
+            position: relative;
+        }
+        .child{
+            background-color: burlywood;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10px;
+        }
+        .child1{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: cornflowerblue;
+            border: 2px solid black;
+        }
+        .child10{
+            border: 1px solid black;
+            background-color: darkorchid;
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">hello</div>
+    <div class="static relative">hii...</div>
+    <div class="static">good  morning</div>
+
+
+    <div class="container">
+        <div class="child1">prabhu</div>
+        <div class="child">yash</div>
+        <div class="child">anurag</div>
+        <div class="child10">sticky</div>
+    </div>
+    
+</body>
+</html>

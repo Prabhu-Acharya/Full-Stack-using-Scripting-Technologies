@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: number;
+            
+        }
+        p{
+            counter-reset: name;
+        }
+
+        h2::before{
+            counter-increment: number;
+            content: counter(number) ":";
+        }
+
+        p::before{
+            counter-increment: name;
+            content: counter(number) "." counter(name) ":";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Scction O</h1>
+
+    <h2>name</h2>
+    <h2>year</h2>
+    <h2>address</h2>
+
+    
+
+    <p>my name is prabhu acharya</p>
+    <p>my name is prabhu acharya</p>
+    <p>my name is prabhu acharya</p>
+
+    
+</body>
+</html>

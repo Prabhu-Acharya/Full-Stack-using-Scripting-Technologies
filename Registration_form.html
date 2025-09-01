@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .required{
+
+            color: red;
+        }
+        h1{
+            text-align: center;
+            background-color: aqua;
+        }
+        form{
+            background-color:grey;
+        }
+    </style>
+    <!-- email,password,confirm password,contact no,home  address,save buttons,forgot button,reset button  -->
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+    <table>
+        <tr>
+            <td><label>Usename<span class="required">*</span></label></td>
+            <td><input type="text" required><br></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Email<span class="required">*</span></label></td>
+            <td><input type="email" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Password<span class="required">*</span></label></td>
+            <td><input type="password" name="" id="" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="">Confirm Password<span class="required">*</span></label></td>
+            <td><input type="password" required></td>
+
+        </tr>
+
+        <tr>
+            <td><label for="">Contact  No.<span class="required">*</span></label></td>
+            <td><input type="tel" pattern="[0-9]{10}" placeholder="10 digit-number" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Home Address<span class="required">*</span></label></td>
+            <td><textarea name="" id="" required></textarea></td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="submit">Save</button>
+                <button  type="reset">Reset</button>
+                <button type="button">Forgot</button>
+            </td>
+        </tr>
+
+    </table>
+    </form>
+</body>
+
+</html>
+
+<!-- translations  css --- translate scale rotate   -->

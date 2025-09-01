@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+
+        }
+        .container{
+            font-size: 10px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+        }
+        .sun{
+            position: absolute;
+            top: 15em;
+            left: 20em;
+            width: 10em;
+            height: 10em;
+            background-color: rgb(244, 194, 12);
+            border-radius: 50%;
+            box-shadow:0 0 3em white;
+        }
+        .earth{
+            position: absolute;
+            top: 10em;
+            left: 10em;
+            width: 5em;
+            height: 5em;
+            background-color: rgba(25, 149, 231, 0.889);
+            border-radius: 50%;
+            box-shadow: 0 0 3em white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="earth"></div>
+    </div>
+</body>
+</html>
