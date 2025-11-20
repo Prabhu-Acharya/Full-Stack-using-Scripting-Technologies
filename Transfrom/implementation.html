@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            /* border-radius: 50%; */
+            background-color: cornflowerblue;
+            border: 2px solid cornflowerblue;
+            transition-property: transform,rotate;
+            transition-duration: 12s;
+            transition-timing-function: cubic-bezier(0.25,0.1,0.25,0.1);
+            transition-delay: 1s;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+            border: 2px solid olive;
+            transition-property: transform,translate;  
+            transition-duration: 7s;
+            transition-delay: 1s;    
+            animation: trial1 3s rotate 1s 2 reverse fill-mode;      
+        }
+        .box1:hover{
+            transform:rotate(60deg) translateX(100px) translateY(500px);
+            /* transform:translateX(200px) translateY(200px)  rotate(100deg) ; */
+            
+        }
+        .box2:hover{
+            transform: translateX(300px) translateY(400px);
+
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        }
+
+    @keyframes trial1{
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="box1">box 1</div>
+    <div class="box2">box 2</div>
+</body>
+</html>

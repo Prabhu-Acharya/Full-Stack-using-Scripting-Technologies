@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+    <style>
+        
+        #ball{
+            margin-left: 300px;
+            margin-top: 200px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: darkorange;
+            position: relative;
+        }
+        #control{
+            margin-top: 30px;
+        }
+        @keyframes bounce{
+            0%{top:0px}
+            50%{top:200px}
+            100%{top:0px}
+        }
+
+        .bouncing{
+            animation: bounce 1s infinite ease-in-out;
+        }
+
+        button{
+            margin-top: 250px;
+            
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        #startBtn{
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+    
+    <div id="control">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+    </div>
+    <script>
+        const ball=document.getElementById("ball") ;
+        const StartBtn=document.getElementById("startBtn");
+        const StopBtn=document.getElementById("stopBtn");
+
+        StartBtn.addEventListener('click',()=>{
+            ball.classList.add('bouncing');
+
+        })
+
+        StopBtn.addEventListener('click',()=>{
+            ball.classList.remove('bouncing');
+        })
+        
+    </script>
+</body>
+</html>
+
+
+
+<!-- audio tag on start  music  runs
+arrow functions
+general functions 
+
+inner html vs outer html vs adjacent html
+
+eleement.match
+.closest
+.contain
+document.write vs console..log vs dir
+
+set timeout vs interval , argument 1,2
+callback hels
+promises
+
+cup plate fill on cusror point coffee sip in
+
+const or let use where count value increases
+
+
+prototype
+promises
+
+
+-->

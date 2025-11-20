@@ -1,0 +1,31 @@
+type 
+name 
+value 
+class 
+id 
+autocomplete
+autofocus 
+require 
+pattern 
+selected 
+disabled 
+hidden 
+read-only  
+datalist 
+placehoder  
+dropdown----datalist
+legit
+fieldset
+alt working in image
+background size ---- cover
+diff  ---radio and checkbox
+diff  ---radio and dropdown
+definion list
+rowspan & cospan
+thead,tbody,
+section v/s 
+attribute and  property difference
+loader
+
+
+Question--- center msg greeting , icon image, 

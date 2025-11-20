@@ -1,0 +1,7 @@
+bebel
+
+webpex
+virtual dom ---- reconstilation
+
+lazy loading
+

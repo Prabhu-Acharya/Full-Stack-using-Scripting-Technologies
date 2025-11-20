@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333333;
+
+            
+
+        } 
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+             
+        }
+         header nav ul li{
+            margin-right: 20px;
+
+         }
+         header nav a {
+            text-decoration: none;
+            color: #fff;
+         }
+         .hero{
+            background-color: #6aacef ;
+            padding: 3em;
+            align-items: center;
+            color: white;
+         }
+         .heroes{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gainsboro    ;
+            justify-content: center;
+         }
+         .feature{
+            margin: 20px;
+            padding: 10px;
+            background-color: beige;
+            width: calc(33.33% - 40px);
+            border: 1px solid black;
+            box-shadow: 15px solid black;
+            border-radius: 10px;
+            
+         }      
+         footer{
+            background-color:#6aacef;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            
+         } 
+
+         @media only screen and (max-width:780px) {
+            .feature{
+                width: calc(50% - 40px);
+
+            }
+            
+         }
+         @media only screen and (max-width:450px) {
+            header nav ul{
+                flex-direction: column;
+            }
+            .feature{
+                width: 100%;
+                margin: 10px 0;
+            }
+         }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+<ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+
+        </nav>
+    </header>
+    <main>
+    <section class="hero">
+        <h1>Welcome to our website</h1>
+        <p>Technical languages use is html and CSS</p>
+
+    </section>
+    <section class="heroes">
+        <div class="feature"><h2>Feature1</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.   </P></div>
+        <div  class="feature"><h2>Feature2</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.   </P></div>
+        <div class="feature"><h2>Feature3</h2><P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus eligendi nobis ea laudantium numquam vero quisquam alias, voluptatibus culpa, possimus veritatis fugiat expedita maiores architecto distinctio eaque magnam reiciendis iste! Aliquid dolores nobis iusto cumque a hic maiores voluptate soluta consectetur ipsum, natus facere ad optio velit suscipit placeat praesentium.   </P></div>
+    </section>
+    </main>
+    <footer>
+        <h2>GLA&copy Reserved 2025</h2>
+
+    </footer>
+
+    
+    
+</body>
+</html>

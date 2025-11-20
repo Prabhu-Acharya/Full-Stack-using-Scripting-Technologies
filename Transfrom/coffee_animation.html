@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        height:100vh;
+        background-color:lightgray;
+    }
+    .plate{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position:relative;
+        background-color: white;
+        border:2px solid black ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0,0,0);
+        
+
+    }
+    .cup{
+        height: 120px;
+        width: 120px;
+        position: relative;
+        border: 3px  solid #b0b0b0;
+        border-radius: 15px 10px  50% 50%;
+        border-bottom-width: 10px ;
+        box-shadow: inset 0px 2px 4px rgba(0,0,0,0.5);
+        overflow: hidden;
+        }
+    .handle{
+        height: 50px;
+        width: 30px;
+        border: 4px solid #b0b0b0;
+        border-left: none;
+        border-radius: 0 25% 25% 0;
+        position: relative;
+        top: -6px;
+        left: 155px;
+        
+
+        }
+        
+    .coffee{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #6f4e37;
+        animation: coffeeFill  3s ease forwards;
+        animation-delay: 1s;
+        box-shadow: inset  0px 2px 4px rgba(0, 0, 0, 0.9);
+    
+    
+
+    }
+    .vapour{
+        
+    }
+    /* #6f4e37 */
+    @keyframes coffeeFill{
+        to{
+            height: 70%;
+        }
+    }
+    @keyframes fly{
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="plate">
+        <div class="handle"></div>
+        <div class="vapour"></div>
+        <div class="cup">
+            <div class="coffee"></div>
+            <!-- <div class="handle"></div> -->
+        </div>
+    </div>
+</body>
+</html>

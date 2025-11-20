@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style> -->
+        <!-- .demo{
+            color: red;
+
+        } -->
+    <!-- </style> -->
+</head>
+<body>
+    <h1 id ="demo" class="demo" name="demo"> Section O</h1>
+    <button onclick="chndata()">Change-Data</button>
+    <button ondblclick="chndata()">Change-Data</button>
+    <button onmousedown="chndata()">Change-Data</button>
+    <button onmouseup="chndata()">Change-Data</button>
+    <button onmousemove="chndata()">Change-Data</button>
+    <button onmouseout="chndata()">Change-Data</button>
+
+    <script>
+        function chndata(){
+            const heading=document.getElementById("demo");
+            heading.innerHTML="<i>Class Btech</i>";
+        }
+        
+
+        // const heading = document.getElementsByClassName("demo")[0];
+
+        // const heading= document.getElementsByTagName("demo");
+
+        
+       // heading.textContent="<i> Class Btech</i>";
+
+        heading.style.color="blue";
+        heading.style.border="2px solid black ";
+        heading.style.backgroundColor="yellow";
+
+        //heading.style.cssText="color:blue; backgroundColor:yellow; ";
+
+        // Object.assign('heading',{
+        //     fontSize:'12px',
+        //     fontWeight: 'bold',
+        // });
+
+
+        // heading.classList.add('demo');
+    </script>
+</body>
+</html>

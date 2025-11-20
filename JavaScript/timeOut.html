@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setTimeOut(function, timedelay, arg1, arg2)
+
+        // alert("Welcome Loosers");
+
+        // let tt = setTimeout(function(){
+        //     prompt("Enter your Name");
+        // }, 5000);
+
+        // console.log(tt);
+////////////////////////////////////////////////////////////////////
+        // let tt = setTimeout(function() {
+        //     alert("Hello");
+        // }, 5000);
+
+        // let n = prompt("are you willing to terminate")
+        // if(n =='y'){
+        //     clearTimeout(tt);
+        // }
+        // console.log(tt);
+
+        //////////////////////////////////////////////
+
+        // function add(a, b){
+        //     console.log(a+b)
+        // };
+
+        // setTimeout(add(), 3000, 2, 5);
+
+
+        //////////////////////////////////////////////////
+
+       function data(){
+        console.log(this);
+
+       }
+       const obj = {
+        name:'Prabhu', dummy:data
+    };
+
+       obj.dummy();
+       data();
+
+
+    </script>
+</body>
+</html>
